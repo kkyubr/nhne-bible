@@ -6,6 +6,11 @@ export const runtime = 'edge'
 export async function GET(request: NextRequest) {
   let responseText = 'Hello World';
   responseText += request.url
+  request.method
+  request.ip
+
+
+  getRequestContext()
 
   // In the edge runtime you can use Bindings that are available in your application
   // (for more details see:
